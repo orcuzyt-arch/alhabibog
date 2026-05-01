@@ -270,6 +270,35 @@
     }
     .btn-keeta:active { transform: translateY(0) scale(0.99); }
 
+    .btn-review {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, rgba(255,255,255,0.75) 0%, rgba(255,251,240,0.85) 100%);
+      color: var(--black); font-weight: 800;
+      font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 15px 32px; border-radius: 100px;
+      border: 1.5px solid rgba(245,166,35,0.5); cursor: pointer;
+      text-decoration: none; display: inline-flex; align-items: center; gap: 9px;
+      transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1); font-family: 'Lato', sans-serif;
+      backdrop-filter: blur(16px);
+      box-shadow:
+        0 2px 0 rgba(255,255,255,0.8) inset,
+        0 6px 20px rgba(245,166,35,0.15);
+    }
+    .btn-review::before {
+      content: '';
+      position: absolute; top: 0; left: -100%; width: 60%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+      transition: left 0.5s ease; transform: skewX(-20deg);
+    }
+    .btn-review:hover::before { left: 160%; }
+    .btn-review:hover {
+      border-color: var(--gold);
+      background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,248,220,1) 100%);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 10px 28px rgba(245,166,35,0.25);
+    }
+    .btn-review:active { transform: translateY(0) scale(0.99); }
+
     .hero-stats {
       display: flex; gap: 24px; margin-top: 36px; padding-top: 32px;
       border-top: 1px solid rgba(0,0,0,0.1);
@@ -320,11 +349,11 @@
     .about-feature p { font-size: 12px; color: var(--text-light); line-height: 1.5; }
 
     /* ── SPECIALS ── */
-    .specials { background: linear-gradient(135deg, #F5A623 0%, #FFC85A 30%, #fff8e1 65%, #ffffff 100%); padding: 96px 5%; }
-    .specials .section-tag { color: var(--black); }
-    .specials .section-title { color: var(--black); }
+    .specials { background: linear-gradient(160deg, #fffaf0 0%, #fef3d0 40%, #fdeab0 100%); padding: 96px 5%; }
+    .specials .section-tag { color: #7a5200; font-weight: 800; }
+    .specials .section-title { color: #1a1000; }
     .specials-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 56px; }
-    .specials-link { color: var(--black); font-weight: 700; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: opacity 0.2s; }
+    .specials-link { color: #1a1000; font-weight: 700; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: opacity 0.2s; }
     .specials-link:hover { opacity: 0.6; }
 
     .dishes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -800,6 +829,7 @@
       <div class="hero-btns">
         <button class="btn-primary" onclick="navigate('menu')">🍛 Explore Full Menu</button>
         <a class="btn-keeta" href="https://url.mykeeta.com/R4JRLtdz" target="_blank" rel="noopener noreferrer">🛵 Order on Keeta</a>
+        <a class="btn-review" href="https://search.google.com/local/writereview?placeid=ChIJcaQ-HADpST4RsQCjHptY8c4" target="_blank" rel="noopener noreferrer">⭐ Leave a Review</a>
         <button class="btn-secondary" onclick="navigate('location')">📍 Find Us</button>
       </div>
       <div class="hero-stats">
@@ -870,8 +900,8 @@
     <div class="specials-header">
       <div>
         <span class="section-tag">🌟 House Specials</span>
-        <h2 class="section-title" style="color:var(--warm-white)">A Taste of<br>What Awaits</h2>
-        <p style="color:rgba(0,0,0,0.5);font-size:14px;margin-top:8px">Just a few of the dishes our guests keep coming back for.</p>
+        <h2 class="section-title" style="color:#1a1000">A Taste of<br>What Awaits</h2>
+        <p style="color:rgba(0,0,0,0.65);font-size:14px;margin-top:8px">Just a few of the dishes our guests keep coming back for.</p>
       </div>
       <a class="specials-link" onclick="navigate('menu')">See Full Menu →</a>
     </div>
@@ -933,7 +963,7 @@
     <div class="location-grid">
       <div class="location-map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.1234!2d50.20500!3d26.27800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fbf555555555%3A0x0!2s75CV%2BR7Q%2C+Yanbu+St%2C+Al-Thuqbah%2C+Al+Khobar+34624%2C+Saudi+Arabia!5e0!3m2!1sen!2ssa!4v1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.1234!2d50.1932652!3d26.271913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e9001c3ea471%3A0xcef1589b1ea300b1!2sAl+HABIB+RESTAURANT!5e0!3m2!1sen!2ssa!4v1"
           allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Al Habib Restaurants location"></iframe>
       </div>
       <div class="location-cards">
@@ -1167,6 +1197,38 @@
     <h1 class="section-title" style="color:white">What Our <em>Guests</em> Say</h1>
   </div>
   <div class="reviews-all">
+    <!-- Review CTA -->
+    <div style="
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a1a00 100%);
+      border-radius: 16px; padding: 36px 40px;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;
+      margin-bottom: 48px;
+      border: 1px solid rgba(245,166,35,0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    ">
+      <div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px">⭐ Share Your Experience</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:white;margin-bottom:8px">Enjoyed your meal?</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6;max-width:400px">Tap the button, hit 5 stars — that's it. Takes 5 seconds and means the world to us.</p>
+      </div>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJcaQ-HADpST4RsQCjHptY8c4"
+        target="_blank" rel="noopener noreferrer"
+        style="
+          display: inline-flex; align-items: center; gap: 10px;
+          background: var(--gold); color: var(--black);
+          font-family: 'Lato',sans-serif; font-weight: 800;
+          font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase;
+          padding: 18px 36px; border-radius: 100px; text-decoration: none;
+          box-shadow: 0 4px 20px rgba(245,166,35,0.45);
+          transition: all 0.25s; white-space: nowrap;
+          position: relative; overflow: hidden;
+        "
+        onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 28px rgba(245,166,35,0.55)'"
+        onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(245,166,35,0.45)'"
+      >
+        ⭐⭐⭐⭐⭐ &nbsp; Rate Us on Google
+      </a>
+    </div>
     <div class="reviews-grid" id="reviewsGrid"></div>
   </div>
 </div>
@@ -1180,7 +1242,7 @@
   <div class="location-page-content">
     <div class="location-page-map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.1234!2d50.20500!3d26.27800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fbf555555555%3A0x0!2s75CV%2BR7Q%2C+Yanbu+St%2C+Al-Thuqbah%2C+Al+Khobar+34624%2C+Saudi+Arabia!5e0!3m2!1sen!2ssa!4v1"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.1234!2d50.1932652!3d26.271913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e9001c3ea471%3A0xcef1589b1ea300b1!2sAl+HABIB+RESTAURANT!5e0!3m2!1sen!2ssa!4v1"
         allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Al Habib Restaurants location"></iframe>
     </div>
     <div class="location-info-grid">
@@ -1212,9 +1274,21 @@
           <p>Dedicated family sections available<br>Walk-ins warmly welcome</p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+      <div class="location-card" style="background:linear-gradient(135deg,#1a1a1a,#2a1a00);border-color:rgba(245,166,35,0.25)">
+        <div class="location-card-icon">⭐</div>
+        <div>
+          <h4 style="color:var(--gold)">Leave a Review</h4>
+          <p style="color:rgba(255,255,255,0.5);margin-bottom:14px">Loved your visit? Tap 5 stars — takes 5 seconds!</p>
+          <a href="https://search.google.com/local/writereview?placeid=ChIJcaQ-HADpST4RsQCjHptY8c4"
+            target="_blank" rel="noopener noreferrer"
+            style="display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--black);font-family:'Lato',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:10px 20px;border-radius:100px;text-decoration:none;transition:all 0.2s"
+            onmouseover="this.style.background='#D4881A'" onmouseout="this.style.background='var(--gold)'"
+          >⭐⭐⭐⭐⭐ Rate Us</a>
+        </div>
+      </div>
+    </div><!-- /location-info-grid -->
+  </div><!-- /location-page-content -->
+</div><!-- /page-location -->
 
 <!-- ════════════════ FOOTER ════════════════ -->
 <footer>
