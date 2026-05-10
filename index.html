@@ -1071,138 +1071,242 @@
   </div>
   <div class="menu-filters">
     <button class="filter-btn active" onclick="filterMenu('all', this)">All</button>
-    <button class="filter-btn" onclick="filterMenu('grills', this)">🔥 Grills</button>
+    <button class="filter-btn" onclick="filterMenu('soups', this)">🍲 Soups</button>
+    <button class="filter-btn" onclick="filterMenu('salads', this)">🥗 Salads</button>
+    <button class="filter-btn" onclick="filterMenu('appetizers', this)">🫙 Appetizers</button>
+    <button class="filter-btn" onclick="filterMenu('starters', this)">🍗 Starters</button>
     <button class="filter-btn" onclick="filterMenu('curries', this)">🍛 Curries</button>
-    <button class="filter-btn" onclick="filterMenu('rice', this)">🍚 Rice &amp; Bread</button>
-    <button class="filter-btn" onclick="filterMenu('starters', this)">🥗 Starters</button>
+    <button class="filter-btn" onclick="filterMenu('nehari', this)">🥘 Nehari</button>
+    <button class="filter-btn" onclick="filterMenu('haleem', this)">🫕 Haleem</button>
+    <button class="filter-btn" onclick="filterMenu('bbq', this)">🔥 BBQ</button>
+    <button class="filter-btn" onclick="filterMenu('chicken', this)">🍖 Full Chicken</button>
+    <button class="filter-btn" onclick="filterMenu('signature', this)">⭐ Signature</button>
+    <button class="filter-btn" onclick="filterMenu('rice', this)">🍚 Rice</button>
+    <button class="filter-btn" onclick="filterMenu('fish', this)">🐟 Fish</button>
+    <button class="filter-btn" onclick="filterMenu('pasta', this)">🍝 Pasta</button>
+    <button class="filter-btn" onclick="filterMenu('fastfood', this)">🍔 Fast Food</button>
+    <button class="filter-btn" onclick="filterMenu('desserts', this)">🍮 Desserts</button>
+    <button class="filter-btn" onclick="filterMenu('breads', this)">🫓 Breads</button>
     <button class="filter-btn" onclick="filterMenu('drinks', this)">🥤 Drinks</button>
   </div>
   <div class="menu-content">
 
-    <div class="menu-category" data-cat="grills">
-      <div class="menu-cat-header">
-        <span class="menu-cat-icon">🔥</span>
-        <h2 class="menu-cat-title">Grills &amp; BBQ</h2>
-      </div>
+    <!-- SOUPS -->
+    <div class="menu-category" data-cat="soups">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🍲</span><h2 class="menu-cat-title">Soups</h2></div>
       <div class="menu-items-grid">
-        <div class="menu-item-card">
-          <img class="menu-item-img" src="https://air-kiss-hero.lovable.app/assets/dish-bbq-B_wXO1Dq.jpg" alt="Chapli Kabab" onerror="this.style.background='#eee';this.removeAttribute('src')" />
-          <div class="menu-item-body">
-            <div class="menu-item-tags">
-              <span class="menu-item-tag">Grill</span>
-              <span class="menu-item-tag" style="background:rgba(220,50,50,0.1);color:#c0392b">🌶 Spicy</span>
-            </div>
-            <div class="menu-item-name">Chapli Kabab</div>
-            <div class="menu-item-desc">Juicy, well-seasoned kababs cooked to perfection. Served with fresh naan and chutney.</div>
-            <div class="menu-item-price">SAR 15 <span>/ serving</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="menu-cat-coming" style="margin-top:20px">
-        <div class="menu-cat-coming-icon">🔥</div>
-        <h4>More Coming Soon</h4>
-        <p>More grill items coming soon — seekh kabab, malai boti and more on the way.</p>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Soup</span></div><div class="menu-item-name">Thai Soup</div><div class="menu-item-desc">Aromatic herbs and spices with lemongrass, galangal, lime leaves and chili peppers in a flavorful broth.</div><div class="menu-item-price">SAR 12</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Soup</span></div><div class="menu-item-name">Chicken Corn Soup</div><div class="menu-item-desc">Comforting soup with tender chicken, sweet corn kernels and aromatic spices.</div><div class="menu-item-price">SAR 12</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Soup</span><span class="menu-item-tag" style="background:rgba(220,50,50,0.1);color:#c0392b">🌶 Spicy</span></div><div class="menu-item-name">Hot and Sour Soup</div><div class="menu-item-desc">Spicy and tangy broth with mushrooms, tofu, bamboo shoots and mixed vegetables.</div><div class="menu-item-price">SAR 12</div></div></div>
       </div>
     </div>
 
-    <div class="menu-category" data-cat="curries">
-      <div class="menu-cat-header">
-        <span class="menu-cat-icon">🍛</span>
-        <h2 class="menu-cat-title">Curries &amp; Karahi</h2>
-      </div>
+    <!-- SALADS -->
+    <div class="menu-category" data-cat="salads">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🥗</span><h2 class="menu-cat-title">Salads — السلطات</h2></div>
       <div class="menu-items-grid">
-        <div class="menu-item-card">
-          <img class="menu-item-img" src="https://air-kiss-hero.lovable.app/assets/dish-karahi-Dv-mHIWe.jpg" alt="Mutton Karahi" onerror="this.style.background='#eee';this.removeAttribute('src')" />
-          <div class="menu-item-body">
-            <div class="menu-item-tags">
-              <span class="menu-item-tag">Karahi</span>
-              <span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Best Seller</span>
-            </div>
-            <div class="menu-item-name">Mutton Karahi</div>
-            <div class="menu-item-desc">Slow-cooked mutton in a rich tomato-ginger gravy with fresh green chilies.</div>
-            <div class="menu-item-price">SAR 22 <span>/ serving</span></div>
-          </div>
-        </div>
-        <div class="menu-item-card">
-          <img class="menu-item-img" src="https://air-kiss-hero.lovable.app/assets/dish-curry-RdOaLfLm.jpg" alt="Chicken Tikka Masala" onerror="this.style.background='#eee';this.removeAttribute('src')" />
-          <div class="menu-item-body">
-            <div class="menu-item-tags"><span class="menu-item-tag">Curry</span></div>
-            <div class="menu-item-name">Chicken Tikka Masala</div>
-            <div class="menu-item-desc">Tender chicken in a creamy, spiced tomato gravy. Served with naan.</div>
-            <div class="menu-item-price">SAR 18 <span>/ serving</span></div>
-          </div>
-        </div>
-        <div class="menu-item-card">
-          <img class="menu-item-img" src="https://air-kiss-hero.lovable.app/assets/dish-nihari-DvYYOH0T.jpg" alt="Beef Nihari" onerror="this.style.background='#eee';this.removeAttribute('src')" />
-          <div class="menu-item-body">
-            <div class="menu-item-tags">
-              <span class="menu-item-tag">Curry</span>
-              <span class="menu-item-tag" style="background:rgba(220,50,50,0.1);color:#c0392b">🌶 Spicy</span>
-            </div>
-            <div class="menu-item-name">Beef Nihari</div>
-            <div class="menu-item-desc">Traditional slow-cooked beef stew, rich and aromatic. Garnished with ginger and lemon.</div>
-            <div class="menu-item-price">SAR 20 <span>/ serving</span></div>
-          </div>
-        </div>
-        <div class="menu-item-card">
-          <img class="menu-item-img" src="https://air-kiss-hero.lovable.app/assets/dish-haleem-ChePkXIj.jpg" alt="Haleem" onerror="this.style.background='#eee';this.removeAttribute('src')" />
-          <div class="menu-item-body">
-            <div class="menu-item-tags"><span class="menu-item-tag">Stew</span></div>
-            <div class="menu-item-name">Haleem</div>
-            <div class="menu-item-desc">Hearty lentil and beef stew, slow-cooked to a perfect blend of flavors.</div>
-            <div class="menu-item-price">SAR 16 <span>/ serving</span></div>
-          </div>
-        </div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Salad</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Special</span></div><div class="menu-item-name">Habib Special Salad</div><div class="menu-item-desc">سلطة حبيب الخاصة</div><div class="menu-item-price">SAR 20</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Salad</span></div><div class="menu-item-name">Green Salad</div><div class="menu-item-desc">سلطة خضراء</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Salad</span></div><div class="menu-item-name">Green Onion Salad</div><div class="menu-item-desc">سلطة البصل الأخضر</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Salad</span></div><div class="menu-item-name">Russian Salad</div><div class="menu-item-desc">سلطة روسية</div><div class="menu-item-price">SAR 20</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Salad</span></div><div class="menu-item-name">Plain Salad</div><div class="menu-item-desc">سلطة عادية</div><div class="menu-item-price">SAR 10</div></div></div>
       </div>
     </div>
 
-    <div class="menu-category" data-cat="rice">
-      <div class="menu-cat-header">
-        <span class="menu-cat-icon">🍚</span>
-        <h2 class="menu-cat-title">Rice &amp; Bread</h2>
-      </div>
+    <!-- APPETIZERS -->
+    <div class="menu-category" data-cat="appetizers">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🫙</span><h2 class="menu-cat-title">Appetizers — مقبلات</h2></div>
       <div class="menu-items-grid">
-        <div class="menu-item-card">
-          <img class="menu-item-img" src="https://air-kiss-hero.lovable.app/assets/dish-biryani-B72eAe8t.jpg" alt="Chicken Biryani" onerror="this.style.background='#eee';this.removeAttribute('src')" />
-          <div class="menu-item-body">
-            <div class="menu-item-tags">
-              <span class="menu-item-tag">Rice</span>
-              <span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Signature</span>
-            </div>
-            <div class="menu-item-name">Chicken Biryani</div>
-            <div class="menu-item-desc">Fragrant basmati rice layered with spiced chicken, saffron and fried onions.</div>
-            <div class="menu-item-price">SAR 18 <span>/ serving</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="menu-cat-coming" style="margin-top:20px">
-        <div class="menu-cat-coming-icon">🍚</div>
-        <h4>More Coming Soon</h4>
-        <p>Mutton biryani, naan, roti and paratha coming soon.</p>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Appetizer</span></div><div class="menu-item-name">Mutabbal</div><div class="menu-item-desc">متبل</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Appetizer</span></div><div class="menu-item-name">Baba Ghanoush Salad</div><div class="menu-item-desc">سلطة بابا غنوج</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Appetizer</span></div><div class="menu-item-name">Tabbouleh Salad</div><div class="menu-item-desc">سلطة تبولة</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Appetizer</span></div><div class="menu-item-name">Hummus</div><div class="menu-item-desc">حمص</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Appetizer</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Popular</span></div><div class="menu-item-name">Ready Mixed Appetizers</div><div class="menu-item-desc">مقبلات مشكلة جاهزة</div><div class="menu-item-price">SAR 20</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Appetizer</span></div><div class="menu-item-name">Olive Salad</div><div class="menu-item-desc">سلطة الزيتون</div><div class="menu-item-price">SAR 15</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Appetizer</span></div><div class="menu-item-name">Cucumber with Yogurt</div><div class="menu-item-desc">سلطة خيار بالزبادي</div><div class="menu-item-price">SAR 10</div></div></div>
       </div>
     </div>
 
+    <!-- STARTERS -->
     <div class="menu-category" data-cat="starters">
-      <div class="menu-cat-header">
-        <span class="menu-cat-icon">🥗</span>
-        <h2 class="menu-cat-title">Starters &amp; Sides</h2>
-      </div>
-      <div class="menu-cat-coming">
-        <div class="menu-cat-coming-icon">🥗</div>
-        <h4>More Coming Soon</h4>
-        <p>We're keeping this space for our starters and sides.</p>
+      <div class="menu-cat-header"><span class="menu-cat-icon">🍗</span><h2 class="menu-cat-title">Starters — بدايـة</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Starter</span><span class="menu-item-tag" style="background:rgba(220,50,50,0.1);color:#c0392b">🌶 Spicy</span></div><div class="menu-item-name">Hot Wings</div><div class="menu-item-desc">أجنحة الدجاج الحارة — Crispy succulent chicken wings tossed in spicy sauce.</div><div class="menu-item-price">SAR 15</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Starter</span></div><div class="menu-item-name">Finger Chips</div><div class="menu-item-desc">بطاطس مقلية — Crispy golden potato fries seasoned to perfection.</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Starter</span></div><div class="menu-item-name">Crispy Chicken Strips</div><div class="menu-item-desc">كرسبي تشيكن — Tender chicken breast strips in crunchy breading, served with dipping sauce.</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Starter</span><span class="menu-item-tag" style="background:rgba(220,50,50,0.1);color:#c0392b">🌶 Spicy</span></div><div class="menu-item-name">Zing Chicken Pop</div><div class="menu-item-desc">زينغ تشيكن بوب — Bite-sized chicken pieces in zesty seasoning, fried to crispy perfection.</div><div class="menu-item-price">SAR 15</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Starter</span></div><div class="menu-item-name">Crispy Chicken Lolly</div><div class="menu-item-desc">لولي الدجاج المقرمش — Chicken pieces skewered and coated in crispy batter, fried to golden perfection.</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Starter</span></div><div class="menu-item-name">Fish Finger</div><div class="menu-item-desc">أصابع السمك — Tender fish fillets coated in crispy breadcrumb, fried to golden perfection.</div><div class="menu-item-price">SAR 10</div></div></div>
       </div>
     </div>
 
-    <div class="menu-category" data-cat="drinks">
-      <div class="menu-cat-header">
-        <span class="menu-cat-icon">🥤</span>
-        <h2 class="menu-cat-title">Drinks &amp; Juices</h2>
+    <!-- CURRIES -->
+    <div class="menu-category" data-cat="curries">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🍛</span><h2 class="menu-cat-title">Curries — الكاري</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Curry</span></div><div class="menu-item-name">Mixed Vegetable</div><div class="menu-item-desc">مختلط الخضروات — Medley of fresh vegetables in rich aromatic curry sauce with traditional Pakistani spices.</div><div class="menu-item-price">SAR 14</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Curry</span></div><div class="menu-item-name">Daal Mash</div><div class="menu-item-desc">دال ماش — Hearty black lentils cooked to perfection with aromatic spices, onions, tomatoes and cream.</div><div class="menu-item-price">SAR 12</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Curry</span></div><div class="menu-item-name">Bhindi Masala</div><div class="menu-item-desc">بامية — Delicious okra with pepper and mixed vegetables, aromatic spices, onions and tomatoes.</div><div class="menu-item-price">SAR 14</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Curry</span></div><div class="menu-item-name">Daal Chana</div><div class="menu-item-desc">Chickpeas cooked with lentils, onions, tomatoes and a blend of aromatic spices.</div><div class="menu-item-price">SAR 12</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Curry</span></div><div class="menu-item-name">Chicken Korma</div><div class="menu-item-desc">الدجاج قورمة — Classic Mughlai dish with tender chicken in a rich creamy sauce made with yogurt, cream and aromatic spices.</div><div class="menu-item-price">SAR 22</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Curry</span><span class="menu-item-tag" style="background:rgba(220,50,50,0.1);color:#c0392b">🌶 Spicy</span></div><div class="menu-item-name">Chicken Jalfrezi</div><div class="menu-item-desc">دجاج جلفريزي — Tender chicken cooked with onions, bell peppers, tomatoes and aromatic spices.</div><div class="menu-item-price">SAR 25</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Curry</span></div><div class="menu-item-name">Chicken Malai Handi</div><div class="menu-item-desc">دجاج ماليي هاندي — Mughlai dish with tender chicken in a rich creamy sauce made with yogurt, cream and aromatic spices.</div><div class="menu-item-price">SAR 25</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Curry</span><span class="menu-item-tag" style="background:rgba(220,50,50,0.1);color:#c0392b">🌶 Spicy</span></div><div class="menu-item-name">Chicken 65</div><div class="menu-item-desc">دجاج 65 — Crispy and spicy fried chicken tossed in aromatic spices, curry leaves and chili.</div><div class="menu-item-price">SAR 25</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Karahi</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Best Seller</span></div><div class="menu-item-name">Chicken Karahi (half kilo)</div><div class="menu-item-desc">الدجاج كاراهي نص كيلو — Succulent chicken marinated in aromatic spices, cooked with caramelized onions and fresh ginger.</div><div class="menu-item-price">SAR 25</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Karahi</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Best Seller</span></div><div class="menu-item-name">Mutton Karahi (quarter)</div><div class="menu-item-desc">لحم كاراهي (ربع) — Succulent mutton cooked with caramelized onions, ripe tomatoes, minced garlic and ginger.</div><div class="menu-item-price">SAR 25</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Grill</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Popular</span></div><div class="menu-item-name">Chapli Kabab (2 pieces)</div><div class="menu-item-desc">شابلي كباب — Juicy minced meat kababs with traditional spices. 1 Piece: SAR 8</div><div class="menu-item-price">SAR 15</div></div></div>
       </div>
-      <div class="menu-cat-coming">
-        <div class="menu-cat-coming-icon">🥤</div>
-        <h4>More Coming Soon</h4>
-        <p>We're keeping this space for our drinks and beverages.</p>
+    </div>
+
+    <!-- NEHARI -->
+    <div class="menu-category" data-cat="nehari">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🥘</span><h2 class="menu-cat-title">Nehari — لـحم نـهاري</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Nehari</span></div><div class="menu-item-name">Saada Nehari</div><div class="menu-item-desc">سادة لحم نهاري — Traditional slow-cooked dish with tender meat in a flavorful aromatic broth.</div><div class="menu-item-price">SAR 25</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Nehari</span></div><div class="menu-item-name">Maghaz Nihari</div><div class="menu-item-desc">مخ نهاري — A flavorful twist on traditional Nehari featuring tender sautéed meat with spices and herbs.</div><div class="menu-item-price">SAR 35</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Nehari</span></div><div class="menu-item-name">Nali Nehari</div><div class="menu-item-desc">نالي نهاري — Succulent beef shank slow-cooked in rich aromatic gravy with traditional spices.</div><div class="menu-item-price">SAR 35</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Nehari</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Signature</span></div><div class="menu-item-name">Habib Special Nehari</div><div class="menu-item-desc">حبيب خاص نهاري — Habib's signature delectable combination of tender slow-cooked meat in rich aromatic gravy.</div><div class="menu-item-price">SAR 45</div></div></div>
+      </div>
+    </div>
+
+    <!-- HALEEM (Thu & Fri Special) -->
+    <div class="menu-category" data-cat="haleem">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🫕</span><h2 class="menu-cat-title">Haleem — حليـم <span style="font-size:14px;color:var(--gold-dark);font-family:'Lato',sans-serif;font-weight:700"> · Thursday &amp; Friday Special</span></h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Haleem</span></div><div class="menu-item-name">Saada Haleem</div><div class="menu-item-desc">سادة حليم — Classic dish made with a blend of lentils, meat and wheat, slow-cooked with aromatic spices.</div><div class="menu-item-price">SAR 23</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Haleem</span></div><div class="menu-item-name">Fry Haleem</div><div class="menu-item-desc">فراي حليم — Traditional Haleem topped with crispy fried onions and a drizzle of aromatic fried oil.</div><div class="menu-item-price">SAR 25</div></div></div>
+      </div>
+    </div>
+
+    <!-- BBQ -->
+    <div class="menu-category" data-cat="bbq">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🔥</span><h2 class="menu-cat-title">B.B.Q — شواء</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Popular</span></div><div class="menu-item-name">Chicken Boti</div><div class="menu-item-desc">دجاج بوتي — Succulent grilled chicken marinated in special spices.</div><div class="menu-item-price">SAR 25</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Chicken Tikka (Chest)</div><div class="menu-item-desc">دجاج تكا (الصدر) — Grilled chicken breast tikka.</div><div class="menu-item-price">SAR 13</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Chicken Tikka (Leg)</div><div class="menu-item-desc">دجاج تكا (ساق) — Grilled chicken leg tikka.</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Chicken Malai Boti</div><div class="menu-item-desc">دجاج مالاي بوتي — Creamy marinated chicken skewers grilled to perfection.</div><div class="menu-item-price">SAR 30</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Sheesh Boti</div><div class="menu-item-desc">شيش بوتي — Tender meat skewers grilled to perfection.</div><div class="menu-item-price">SAR 30</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Mutton Chanp (4 pieces)</div><div class="menu-item-desc">ضلوع لحم الضأن — Succulent mutton chops marinated in spices, yogurt, grilled to perfection with a hint of smokiness.</div><div class="menu-item-price">SAR 40</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Signature</span></div><div class="menu-item-name">Habib Special B.B.Q</div><div class="menu-item-desc">حبيب شواء خاص — Delightful assortment of tender grilled meats in a special blend of spices.</div><div class="menu-item-price">SAR 60</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Turkish Chicken Kebab</div><div class="menu-item-desc">دجاج كباب تركي — Grilled chicken mince on skewers with spices.</div><div class="menu-item-price">SAR 20</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Turkish Kebab (Meat)</div><div class="menu-item-desc">لحم كباب تركي — Juicy mutton mince molded onto skewers and grilled to perfection.</div><div class="menu-item-price">SAR 25</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Cheese Boti</div><div class="menu-item-desc">جبن بوتي — Succulent chicken marinated in aromatic spices, grilled to perfection and layered with melted cheese.</div><div class="menu-item-price">SAR 30</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Chicken Behari Kabab</div><div class="menu-item-desc">كباب بيهاري بالدجاج — Tender chicken marinated in yogurt, spices and papaya, grilled to perfection.</div><div class="menu-item-price">SAR 25</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Behari Kabab (Meat)</div><div class="menu-item-desc">بيهاري كباب — Tender marinated meat chunks grilled to perfection, juicy and flavorful.</div><div class="menu-item-price">SAR 40</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Makhni Kabab Fry</div><div class="menu-item-desc">كباب مقلي بالكريمة — Tender kababs in rich makhni sauce, pan-fried to perfection with a creamy twist.</div><div class="menu-item-price">SAR 35</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Green Boti</div><div class="menu-item-desc">بوتي الأخضر — Tender meat or chicken in vibrant green herb and spice mixture, grilled to perfection.</div><div class="menu-item-price">SAR 30</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Batair Platter (4 pieces)</div><div class="menu-item-desc">طبق باتير — 4 pieces quail grilled to perfection.</div><div class="menu-item-price">SAR 60</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Lahori Chargha</div><div class="menu-item-desc">لاهوري شارغـا — Whole chicken marinated and fried to golden perfection, Lahori style.</div><div class="menu-item-price">SAR 35</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Afghani Boti (4 Seekh)</div><div class="menu-item-desc">الأفغاني لحم بوتي — 4 seekh of Afghani-style marinated meat skewers.</div><div class="menu-item-price">SAR 24</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">BBQ</span></div><div class="menu-item-name">Quetta Rosh</div><div class="menu-item-desc">كويتا روش — Slow-cooked Quetta-style mutton. 1 kilo: SAR 90 · ½ kilo: SAR 50 · ¼ kilo: SAR 30</div><div class="menu-item-price">SAR 30 – 90</div></div></div>
+      </div>
+    </div>
+
+    <!-- FULL CHICKEN -->
+    <div class="menu-category" data-cat="chicken">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🍖</span><h2 class="menu-cat-title">Full Chicken — أطباق الدجاج</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Chicken</span></div><div class="menu-item-name">Full B.B.Q Chicken with Rice</div><div class="menu-item-desc">دجاج مشوي كامل مع الأرز</div><div class="menu-item-price">SAR 42</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Chicken</span></div><div class="menu-item-name">1/2 B.B.Q Chicken without Rice</div><div class="menu-item-desc">صف دجاج مشوي بدون أرز</div><div class="menu-item-price">SAR 15</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Chicken</span></div><div class="menu-item-name">1/2 B.B.Q Chicken with Rice</div><div class="menu-item-desc">نصف دجاج مشوي مع الأرز</div><div class="menu-item-price">SAR 21</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Chicken</span></div><div class="menu-item-name">Full B.B.Q Chicken without Rice</div><div class="menu-item-desc">جاج مشوي كامل دبدون أرز</div><div class="menu-item-price">SAR 30</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Chicken</span></div><div class="menu-item-name">Full Grilled Chicken with Rice</div><div class="menu-item-desc">دجاج شواء كامل مع أرز</div><div class="menu-item-price">SAR 40</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Chicken</span></div><div class="menu-item-name">1/2 Grilled Chicken with Rice</div><div class="menu-item-desc">دجاج شواء 1/2 مع أرز</div><div class="menu-item-price">SAR 20</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Chicken</span></div><div class="menu-item-name">1/2 Grilled Chicken without Rice</div><div class="menu-item-desc">شواء نصف دجاج بدون أرز</div><div class="menu-item-price">SAR 14</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Chicken</span></div><div class="menu-item-name">1/4 Grilled Chicken with Rice</div><div class="menu-item-desc">شواء دجاج مع أرز 1/4</div><div class="menu-item-price">SAR 12</div></div></div>
+      </div>
+    </div>
+
+    <!-- SIGNATURE PLATTERS -->
+    <div class="menu-category" data-cat="signature">
+      <div class="menu-cat-header"><span class="menu-cat-icon">⭐</span><h2 class="menu-cat-title">Signature — الأطـباق المميـزة</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Signature</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Must Try</span></div><div class="menu-item-name">Habib Special Platter</div><div class="menu-item-desc">طبق حبيب الخاص — Generous platter of delightful tender grilled meats marinated in a special blend of spices.</div><div class="menu-item-price">SAR 110</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Signature</span></div><div class="menu-item-name">Batair Platter (Large)</div><div class="menu-item-desc">طبق باتير — Large quail platter with rice.</div><div class="menu-item-price">SAR 140</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Signature</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Must Try</span></div><div class="menu-item-name">Habib Special Fish Platter</div><div class="menu-item-desc">طبق سمك حبيب الخاص — Generous platter of delicious variety of seafood marinated in special blend of spices.</div><div class="menu-item-price">SAR 140</div></div></div>
+      </div>
+    </div>
+
+    <!-- RICE MEALS -->
+    <div class="menu-category" data-cat="rice">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🍚</span><h2 class="menu-cat-title">Rice Meals — وجبات الأرز</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Rice</span></div><div class="menu-item-name">Afghani Kabuli Pulao</div><div class="menu-item-desc">كبسة لحم كابلي — Aromatic Afghan rice dish with meat.</div><div class="menu-item-price">SAR 22</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Rice</span><span class="menu-item-tag" style="background:rgba(245,166,35,0.15);color:#b8860b">⭐ Popular</span></div><div class="menu-item-name">Karachi Chicken Biryani</div><div class="menu-item-desc">برياني دجاج كراتشي — Fragrant Karachi-style chicken biryani with aromatic spices.</div><div class="menu-item-price">SAR 18</div></div></div>
+      </div>
+    </div>
+
+    <!-- FISH -->
+    <div class="menu-category" data-cat="fish">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🐟</span><h2 class="menu-cat-title">Fish — سمك</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Fish</span></div><div class="menu-item-name">Grilled Fish</div><div class="menu-item-desc">سمك مشوي — Fresh whole grilled fish with aromatic spices.</div><div class="menu-item-price">SAR 80</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Fish</span></div><div class="menu-item-name">Fish Tikka</div><div class="menu-item-desc">سمك تكا — Marinated fish tikka grilled to perfection.</div><div class="menu-item-price">SAR 50</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Fish</span></div><div class="menu-item-name">Tandoori Fish</div><div class="menu-item-desc">سمك تندوري — Fresh fish cooked tandoori style.</div><div class="menu-item-price">SAR 70</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Fish</span></div><div class="menu-item-name">Broasted Fish</div><div class="menu-item-desc">سمك بروستد — 1 piece ½ kilo of fresh broasted fish.</div><div class="menu-item-price">SAR 30</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Fish</span><span class="menu-item-tag" style="background:rgba(220,50,50,0.1);color:#c0392b">🌶 Spicy</span></div><div class="menu-item-name">Lahori Fish</div><div class="menu-item-desc">سمك لاهوري — 1 piece ½ kilo of fresh spicy fried fish.</div><div class="menu-item-price">SAR 30</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Fish</span></div><div class="menu-item-name">Fried Fish</div><div class="menu-item-desc">سمك مقلي — 1 piece ½ kilo of fresh fried fish.</div><div class="menu-item-price">SAR 30</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Fish</span></div><div class="menu-item-name">Sherry Fish</div><div class="menu-item-desc">سمك شيري — 1 kilogram of fresh fried fish.</div><div class="menu-item-price">SAR 60</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Prawns</span></div><div class="menu-item-name">Prawns Special</div><div class="menu-item-desc">روبيان خاص — Succulent prawns marinated in special blend of spices, grilled to perfection.</div><div class="menu-item-price">SAR 40</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Prawns</span><span class="menu-item-tag" style="background:rgba(220,50,50,0.1);color:#c0392b">🌶 Spicy</span></div><div class="menu-item-name">Prawn Chilli Fry</div><div class="menu-item-desc">روبيان بالفلفل الحار — Prawns stir-fried with chili and spices.</div><div class="menu-item-price">SAR 40</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Prawns</span></div><div class="menu-item-name">Crispy Fried Prawns</div><div class="menu-item-desc">روبيان مقلي مقرمش — Golden crispy fried prawns.</div><div class="menu-item-price">SAR 30</div></div></div>
+      </div>
+    </div>
+
+    <!-- PASTA -->
+    <div class="menu-category" data-cat="pasta">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🍝</span><h2 class="menu-cat-title">Pasta — مكـرونـة</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Pasta</span></div><div class="menu-item-name">Chicken Alfredo</div><div class="menu-item-desc">مكرونة بالدجاج الفردو — Classic Italian pasta with thin chicken slices in creamy Alfredo sauce.</div><div class="menu-item-price">SAR 24</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Pasta</span></div><div class="menu-item-name">Arabic Chicken Pasta</div><div class="menu-item-desc">مكرونة عربية بالدجاج — Arabic-style pasta with chicken and aromatic spices.</div><div class="menu-item-price">SAR 20</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Pasta</span></div><div class="menu-item-name">Italian Baked Pasta</div><div class="menu-item-desc">كيس فرن المعكرونة الإيطالي — Oven-baked Italian pasta with sauce and melting cheese.</div><div class="menu-item-price">SAR 25</div></div></div>
+      </div>
+    </div>
+
+    <!-- FAST FOOD -->
+    <div class="menu-category" data-cat="fastfood">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🍔</span><h2 class="menu-cat-title">Fast Food — الأطعمة السريعة</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Fast Food</span></div><div class="menu-item-name">Zinger Burger</div><div class="menu-item-desc">برجر زنجر — Crispy chicken fillet in spicy crunchy batter, topped with lettuce, tomato, mayonnaise on toasted bun.</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Fast Food</span></div><div class="menu-item-name">Finger Chips</div><div class="menu-item-desc">بطاطس مقلية — Crispy golden potato fries seasoned to perfection.</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Fast Food</span></div><div class="menu-item-name">Broasted Chicken (3 pieces)</div><div class="menu-item-desc">دجاج البروستد — Succulent 3-piece chicken marinated in spices, coated in crispy batter and pressure-fried.</div><div class="menu-item-price">SAR 15</div></div></div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-category" data-cat="desserts">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🍮</span><h2 class="menu-cat-title">Desserts — الحلـويات</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Dessert</span></div><div class="menu-item-name">Sweet Kheer</div><div class="menu-item-desc">كهير — Traditional Pakistani rice pudding.</div><div class="menu-item-price">SAR 7</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Dessert</span></div><div class="menu-item-name">Gajar Ka Halwa</div><div class="menu-item-desc">حلوى الجزر — Traditional carrot dessert. Per plate: SAR 10 · 1 kilo: SAR 70</div><div class="menu-item-price">SAR 10</div></div></div>
+      </div>
+    </div>
+
+    <!-- BREADS -->
+    <div class="menu-category" data-cat="breads">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🫓</span><h2 class="menu-cat-title">Breads — خـبز</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Bread</span></div><div class="menu-item-name">Butter Nan</div><div class="menu-item-desc">Classic buttery naan bread baked fresh.</div><div class="menu-item-price">SAR 3</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Bread</span></div><div class="menu-item-name">Roghni Nan</div><div class="menu-item-desc">Soft, fluffy Roghni naan baked fresh.</div><div class="menu-item-price">SAR 3</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Bread</span></div><div class="menu-item-name">Saada Roti</div><div class="menu-item-desc">Plain roti, 1 piece.</div><div class="menu-item-price">SAR 1</div></div></div>
+      </div>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="menu-category" data-cat="drinks">
+      <div class="menu-cat-header"><span class="menu-cat-icon">🥤</span><h2 class="menu-cat-title">Beverages — مـشـروبـات</h2></div>
+      <div class="menu-items-grid">
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Juice</span></div><div class="menu-item-name">Orange Juice</div><div class="menu-item-desc">عصير برتقال</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Juice</span></div><div class="menu-item-name">Lemon Mint</div><div class="menu-item-desc">عصير الليمون والنعناع</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Juice</span></div><div class="menu-item-name">Pineapple Juice</div><div class="menu-item-desc">عصير الأناناس</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Juice</span></div><div class="menu-item-name">Apple Juice</div><div class="menu-item-desc">عصير التفاح</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Juice</span></div><div class="menu-item-name">Mango</div><div class="menu-item-desc">مانجو</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Juice</span></div><div class="menu-item-name">Banana Milk</div><div class="menu-item-desc">الحليب بالموز</div><div class="menu-item-price">SAR 10</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Water</span></div><div class="menu-item-name">Water</div><div class="menu-item-desc">ماء</div><div class="menu-item-price">SAR 1 – 2</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Soft Drink</span></div><div class="menu-item-name">Small Soft Drink</div><div class="menu-item-desc">مشروب صغير — Pepsi, 7Up, Mirinda, Mountain Dew</div><div class="menu-item-price">SAR 3</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Soft Drink</span></div><div class="menu-item-name">Medium Soft Drink</div><div class="menu-item-desc">مشروب وسط</div><div class="menu-item-price">SAR 6</div></div></div>
+        <div class="menu-item-card"><div class="menu-item-body"><div class="menu-item-tags"><span class="menu-item-tag">Soft Drink</span></div><div class="menu-item-name">Family Soft Drink</div><div class="menu-item-desc">مشروب عائلي</div><div class="menu-item-price">SAR 10</div></div></div>
       </div>
     </div>
 
